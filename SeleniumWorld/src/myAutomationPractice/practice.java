@@ -9,7 +9,7 @@ class practice extends SuperClass{
 	  
 	private By firstNameTxt           =       By.xpath(".//*[@id='basicBootstrapForm']/div[1]/div[1]/input");
 	private By lastNameTxt            =       By.xpath(".//*[@id='basicBootstrapForm']/div[1]/div[2]/input");
-	private By address                =       By.xpath(".//*[@id='basicBootstrapForm']/div[2]/div/textarea");
+	private By addressTxt                =       By.xpath(".//*[@id='basicBootstrapForm']/div[2]/div/textarea");
 	private By email                  =       By.xpath("//*[@id='eid']/input");
 	private By contactNumber          =       By.xpath("//*[@id='basicBootstrapForm']/div[4]/div/input");
 	private By gender                 =       By.xpath( "//*[@id='basicBootstrapForm']/div[5]/div/label[2]/input");
@@ -41,7 +41,7 @@ class practice extends SuperClass{
 	
 	Inputhandler(firstNameTxt,"Neha");
 	Inputhandler(lastNameTxt,"Sharma");
-	Inputhandler(address,"sydney ");
+	Inputhandler(addressTxt,"sydney ");
 	Inputhandler(email,"test@gmail.com");
 	Inputhandler(contactNumber,"1344365");
 	
