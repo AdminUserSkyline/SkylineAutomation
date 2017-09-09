@@ -18,9 +18,9 @@ class practice extends SuperClass{
     private By skills                 =       By.id("Skills");
     private By countryName            =       By.cssSelector("[id='countries']");
     private By selectCountryNameLst   =       By.cssSelector("[id='country']");
-    private By year                   =       By.id("yearbox");
-    private By month                  =       By.xpath(".//*[@id='basicBootstrapForm']/div[11]/div[2]/select");
-    private By date                   =       By.xpath(".//*[@id='daybox']");
+    private By yearDropdown                   =       By.id("yearbox");
+    private By monthDropdown                  =       By.xpath(".//*[@id='basicBootstrapForm']/div[11]/div[2]/select");
+    private By dateDropdown                   =       By.xpath(".//*[@id='daybox']");
           
     private By password               =       By.xpath(".//*[@id='firstpassword']");       
 	private By confirmPassword        =       By.xpath(".//*[@id='secondpassword']");
@@ -61,15 +61,15 @@ class practice extends SuperClass{
 	shortWait(5000);
 	
 	selectFromDropdownByValue(selectCountryNameLst,"India");
-	waitforElement(year);
+	waitforElement(yearDropdown);
 	
-	selectFromDropdownByVisibleText(year,"1988");
-	waitforElement(month);
+	selectFromDropdownByVisibleText(yearDropdown,"1988");
+	waitforElement(monthDropdown);
 	
-    selectFromDropdownByVisibleText(month,"10");
-	waitforElement(date);
+    selectFromDropdownByVisibleText(monthDropdown,"10");
+	waitforElement(dateDropdown);
 	
-	selectFromDropdownByVisibleText(date,"16");
+	selectFromDropdownByVisibleText(dateDropdown,"16");
 	shortWait(5000);
 	
 	waitforElement(password);
