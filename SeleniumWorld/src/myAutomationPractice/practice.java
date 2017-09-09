@@ -12,7 +12,7 @@ class practice extends SuperClass{
 	private By addressTxt                =       By.xpath(".//*[@id='basicBootstrapForm']/div[2]/div/textarea");
 	private By emailTxt                  =       By.xpath("//*[@id='eid']/input");
 	private By contactNumberEdtbox          =       By.xpath("//*[@id='basicBootstrapForm']/div[4]/div/input");
-	private By gender                 =       By.xpath( "//*[@id='basicBootstrapForm']/div[5]/div/label[2]/input");
+	private By genderRadBtn                 =       By.xpath( "//*[@id='basicBootstrapForm']/div[5]/div/label[2]/input");
     private By hobbies1               =       By.id("checkbox1");
     private By hobbies2               =       By.id("checkbox2");
     private By skills                 =       By.id("Skills");
@@ -46,7 +46,7 @@ class practice extends SuperClass{
 	Inputhandler(contactNumberEdtbox,"1344365");
 	
 	
-	 elementToBeClicked(gender);
+	 elementToBeClicked(genderRadBtn);
 	  shortWait(1000);
 	  elementToBeClicked(hobbies1);
 	  elementToBeClicked(hobbies2);
