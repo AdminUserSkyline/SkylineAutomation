@@ -22,7 +22,7 @@ class practice extends SuperClass{
     private By monthDropdown                  =       By.xpath(".//*[@id='basicBootstrapForm']/div[11]/div[2]/select");
     private By dateDropdown                   =       By.xpath(".//*[@id='daybox']");
           
-    private By password               =       By.xpath(".//*[@id='firstpassword']");       
+    private By passwordtxtBox               =       By.xpath(".//*[@id='firstpassword']");       
 	private By confirmPassword        =       By.xpath(".//*[@id='secondpassword']");
 	private By submitBtn              =       By.xpath(".//*[@id='submitbtn']");
 	
@@ -72,9 +72,9 @@ class practice extends SuperClass{
 	selectFromDropdownByVisibleText(dateDropdown,"16");
 	shortWait(5000);
 	
-	waitforElement(password);
+	waitforElement(passwordtxtBox);
 	
-	Inputhandler(password,"alliswell");	
+	Inputhandler(passwordtxtBox,"alliswell");	
 	Inputhandler(confirmPassword,"alliswell");
 	
 	
