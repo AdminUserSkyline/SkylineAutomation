@@ -14,7 +14,7 @@ class practice extends SuperClass{
 	private By contactNumberEdtbox          =       By.xpath("//*[@id='basicBootstrapForm']/div[4]/div/input");
 	private By genderRadBtn                 =       By.xpath( "//*[@id='basicBootstrapForm']/div[5]/div/label[2]/input");
     private By hobbies1chkbox               =       By.id("checkbox1");
-    private By hobbies2               =       By.id("checkbox2");
+    private By hobbies2chkbox               =       By.id("checkbox2");
     private By skillsDropdown                 =       By.id("Skills");
     private By countryName            =       By.cssSelector("[id='countries']");
     private By selectCountryNameLst   =       By.cssSelector("[id='country']");
@@ -49,7 +49,7 @@ class practice extends SuperClass{
 	 elementToBeClicked(genderRadBtn);
 	  shortWait(1000);
 	  elementToBeClicked(hobbies1chkbox);
-	  elementToBeClicked(hobbies2);
+	  elementToBeClicked(hobbies2chkbox);
       shortWait(1000);
 	
 	
