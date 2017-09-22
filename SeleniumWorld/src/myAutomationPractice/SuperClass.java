@@ -59,7 +59,7 @@ public class SuperClass {
   * @param locator
   * @param input
   */
-	public void Inputhandler(By locator,String input){
+	public void inputInTextBox(By locator,String input){
 	driver.findElement(locator).sendKeys(input);
            		
 }

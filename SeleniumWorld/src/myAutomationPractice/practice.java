@@ -54,11 +54,11 @@ class practice extends SuperClass{
 	String url=driver.getCurrentUrl();
 	System.out.println("This is the current Url  : "+url);
 	driver.manage().window().maximize();
-	inputValueInTxtBox(firstNameTxt,"Neha");
-	inputValueInTxtBox(lastNameTxt,"Sharma");
-	inputValueInTxtBox(addressTxt,"sydney ");
-	inputValueInTxtBox(emailTxt,"test@gmail.com");
-	inputValueInTxtBox(contactNumberEdtbox,"1344365");
+	inputInTextBox(firstNameTxt,"Neha");
+	inputInTextBox(lastNameTxt,"Sharma");
+	inputInTextBox(addressTxt,"sydney ");
+	inputInTextBox(emailTxt,"test@gmail.com");
+	inputInTextBox(contactNumberEdtbox,"1344365");
 	
 	
 	 elementToBeClicked(genderRadBtn);
@@ -89,8 +89,8 @@ class practice extends SuperClass{
 	
 	waitforElement(passwordtxtBox);
 	
-	inputValueInTxtBox(passwordtxtBox,"alliswell");	
-	inputValueInTxtBox(confirmPassword,"alliswell");
+	inputInTextBox(passwordtxtBox,"alliswell");	
+	inputInTextBox(confirmPassword,"alliswell");
 	
 	
 	elementToBeClicked(submitBtn);
@@ -105,10 +105,10 @@ class practice extends SuperClass{
 		String url=driver.getCurrentUrl();
 		System.out.println("This is the current Url  : "+url);
 		
-		inputValueInTxtBox(firstNameTxt2 ,"Neha");
+		inputInTextBox(firstNameTxt2 ,"Neha");
 		waitforElement(lastNameTxt2);
 		
-		inputValueInTxtBox(lastNameTxt2,"Sharma");
+		inputInTextBox(lastNameTxt2,"Sharma");
 		waitforElement(genderRdBtn);
 		
 		elementToBeClicked(genderRdBtn);
@@ -117,7 +117,7 @@ class practice extends SuperClass{
 		elementToBeClicked(yearsOfExperienceRadBtn); 
 		waitforElement(datePickerTxtBx);
 		
-		inputValueInTxtBox(datePickerTxtBx,"11 sep 2017"); 
+		inputInTextBox(datePickerTxtBx,"11 sep 2017"); 
 		
 		waitforElement(favouriteTeaChkbox );
 		elementToBeClicked(favouriteTeaChkbox );
@@ -169,13 +169,13 @@ class practice extends SuperClass{
 			System.out.println("we are on the wrong path");
 		    }
 		
-	   inputValueInTxtBox(By.id("email"),"genius@gmail.com");
-	   inputValueInTxtBox(By.id("name"),"Neha");
-	   inputValueInTxtBox(By.id("address"),"Sydney Australia");
+	   inputInTextBox(By.id("email"),"genius@gmail.com");
+	   inputInTextBox(By.id("name"),"Neha");
+	   inputInTextBox(By.id("address"),"Sydney Australia");
 	   selectFromDropdownByVisibleText(By.id("card_type"),"Mastercard");
-	   inputValueInTxtBox(By.id("card_number"),"1234567812345678");
-	   inputValueInTxtBox(By.id("cardholder_name"),"Murli Prasad");
-	   inputValueInTxtBox(By.id("verification_code"),"mera naam joker");
+	   inputInTextBox(By.id("card_number"),"1234567812345678");
+	   inputInTextBox(By.id("cardholder_name"),"Murli Prasad");
+	   inputInTextBox(By.id("verification_code"),"mera naam joker");
 	   elementToBeClicked(By.cssSelector("[class='btn btn-primary']"));
 	   
 	}
@@ -185,13 +185,13 @@ class practice extends SuperClass{
 		driver.navigate().back();
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000450914897'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000451959280'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
-		inputValueInTxtBox(By.id("email"),"genius1@gmail.com");
-		   inputValueInTxtBox(By.id("name"),"Rudra");
-		   inputValueInTxtBox(By.id("address")," Australia");
+		inputInTextBox(By.id("email"),"genius1@gmail.com");
+		   inputInTextBox(By.id("name"),"Rudra");
+		   inputInTextBox(By.id("address")," Australia");
 		   selectFromDropdownByVisibleText(By.id("card_type"),"Mastercard");
-		   inputValueInTxtBox(By.id("card_number"),"1234967812345678");
-		   inputValueInTxtBox(By.id("cardholder_name"),"circuit Prasad");
-		   inputValueInTxtBox(By.id("verification_code"),"mera nahi joker");
+		   inputInTextBox(By.id("card_number"),"1234967812345678");
+		   inputInTextBox(By.id("cardholder_name"),"circuit Prasad");
+		   inputInTextBox(By.id("verification_code"),"mera nahi joker");
 		   elementToBeClicked(By.cssSelector("[class='btn btn-primary']"));
 		
 	}
