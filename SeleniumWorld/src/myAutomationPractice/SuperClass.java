@@ -12,7 +12,6 @@ public class SuperClass {
 	WebDriver driver = null;
 	
 	int longWait = 50;
-	
 	@BeforeTest
 	public void test(){
 	System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
@@ -74,8 +73,6 @@ public class SuperClass {
 	public void shortWait(int a) throws InterruptedException{
 		Thread.sleep(a);
 	}
-	
-	
 }		
 		
 			    
