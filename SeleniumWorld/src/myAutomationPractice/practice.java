@@ -95,7 +95,6 @@ class practice extends SuperClass{
 	inputInTextBox(passwordtxtBox,"alliswell");	
 	inputInTextBox(confirmPassword,"alliswell");
 	
-	
 	elementToBeClicked(submitBtn);
 	//driver.close();
 	
