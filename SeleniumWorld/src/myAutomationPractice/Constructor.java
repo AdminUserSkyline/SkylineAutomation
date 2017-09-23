@@ -6,12 +6,12 @@ package myAutomationPractice;
   static  double a;
   static boolean b;
    
-   Constructor(int x,String s,double d,boolean bool )
+     Constructor(int x,String s,double d,boolean bool )
    {
-	  i=x;
-	  name =s;
-	  a=d;
-      b=bool;
+	            i=x;
+	            name =s;
+	            a=d;
+                b=bool;
    }
 	   
 	   
