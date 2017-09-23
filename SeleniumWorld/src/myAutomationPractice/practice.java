@@ -174,7 +174,6 @@ class practice extends SuperClass{
 	   elementToBeClicked(By.cssSelector("[class='btn btn-primary']"));
 	   
 	}
-	
 	@Test
 	public void runtest4(){
 		driver.navigate().back();

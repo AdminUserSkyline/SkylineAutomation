@@ -17,7 +17,6 @@ package myAutomationPractice;
 	   
    public static void main(String[] args) {
    
-  
   Constructor cons1=new Constructor(5,"Rudra",5.8,false);
   System.out.println(i);
   System.out.println(name);
