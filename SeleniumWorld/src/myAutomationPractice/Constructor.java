@@ -9,6 +9,7 @@ package myAutomationPractice;
    Constructor(int x,String s,double d,boolean bool )
    {
 	   i=x;
+	   
 	   name =s;
 	   a=d;
 	   b=bool;
