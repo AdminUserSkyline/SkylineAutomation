@@ -71,7 +71,7 @@ public class SuperClass {
 	driver.findElement(locator).click();
 	}
 	public void shortWait(int a) throws InterruptedException{
-		Thread.sleep(a);
+   Thread.sleep(a);
 	}
 }		
 		
