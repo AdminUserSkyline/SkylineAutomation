@@ -152,9 +152,9 @@ class practice extends SuperClass{
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000450914890'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000451955160'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 	
-	String url2=driver.getCurrentUrl();
-		System.out.println(url2);
-		if(url2.contains("http://www.practiceselenium.com/check-out.html"))
+	String url02=driver.getCurrentUrl();
+		System.out.println(url02);
+		if(url02.contains("http://www.practiceselenium.com/check-out.html"))
 		{	
 			System.out.println("we are on the right path");
 		}
