@@ -17,4 +17,5 @@ import org.openqa.selenium.remote.server.handler.WebDriverHandler;
 	 { System.out.print("Test failed");
 	 }
       driver.close();
-	}}
+	}
+  }
