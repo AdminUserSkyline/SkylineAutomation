@@ -147,7 +147,7 @@ class practice extends SuperClass{
 		}
 	
 	@Test
-	public void runtest3(){
+	    public void runtest3(){
 		
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000450914890'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000451955160'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
