@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 
 public class SuperClass {
 	WebDriver driver = null;
+	
 	int longWait = 50;
 	
 	@BeforeTest
