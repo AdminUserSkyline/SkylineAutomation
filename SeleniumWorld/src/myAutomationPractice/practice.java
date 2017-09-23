@@ -144,8 +144,7 @@ class practice extends SuperClass{
 		{
 			System.out.println("Testcase is Failed ........");	
 		 }
-		
-	}
+		}
 	
 	@Test
 	public void runtest3(){
