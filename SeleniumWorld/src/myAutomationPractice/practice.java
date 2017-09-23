@@ -94,13 +94,10 @@ class practice extends SuperClass{
 	
 	inputInTextBox(passwordtxtBox,"alliswell");	
 	inputInTextBox(confirmPassword,"alliswell");
-	
 	elementToBeClicked(submitBtn);
 	//driver.close();
 	
 	}
-	
-	
 	@Test
 	public void runTest2() throws InterruptedException{
 		driver.get("http://www.practiceselenium.com/practice-form.html");
@@ -150,12 +147,8 @@ class practice extends SuperClass{
 		
 	}
 	
-	
-	
 	@Test
 	public void runtest3(){
-		
-		
 		
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000450914890'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000451955160'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
@@ -188,13 +181,13 @@ class practice extends SuperClass{
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000450914897'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000451959280'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 		inputInTextBox(By.id("email"),"genius1@gmail.com");
-		   inputInTextBox(By.id("name"),"Rudra");
-		   inputInTextBox(By.id("address")," Australia");
-		   selectFromDropdownByVisibleText(By.id("card_type"),"Mastercard");
-		   inputInTextBox(By.id("card_number"),"1234967812345678");
-		   inputInTextBox(By.id("cardholder_name"),"circuit Prasad");
-		   inputInTextBox(By.id("verification_code"),"mera nahi joker");
-		   elementToBeClicked(By.cssSelector("[class='btn btn-primary']"));
+	    inputInTextBox(By.id("name"),"Rudra");
+		inputInTextBox(By.id("address")," Australia");
+		selectFromDropdownByVisibleText(By.id("card_type"),"Mastercard");
+		inputInTextBox(By.id("card_number"),"1234967812345678");
+		inputInTextBox(By.id("cardholder_name"),"circuit Prasad");
+		inputInTextBox(By.id("verification_code"),"mera nahi joker");
+		elementToBeClicked(By.cssSelector("[class='btn btn-primary']"));
 		
 	}
 	
