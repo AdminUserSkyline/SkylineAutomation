@@ -43,8 +43,8 @@ public class SuperClass {
 	 * @param visibleText
 	 */
 	public void selectFromDropdownByVisibleText(By locator,String visibleText){
-		Select sel=new Select(driver.findElement(locator));
-		sel.selectByVisibleText(visibleText);
+	Select sel=new Select(driver.findElement(locator));
+	sel.selectByVisibleText(visibleText);
 	}
 	/**
 	 *Function to wait for an element
