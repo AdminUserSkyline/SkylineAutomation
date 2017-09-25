@@ -2,11 +2,7 @@ package DataStructure;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-
-
-
 public class practicelinkedlist {
-	
 	public static void main(String args[]){
 	practicehashmappings phm = new practicehashmappings();
 	
@@ -26,8 +22,7 @@ public class practicelinkedlist {
 			 linkListObject.add(i, "d");
 		 }
 	}
-	
-	Iterator<String> itr=linkListObject.iterator();
+ Iterator<String> itr=linkListObject.iterator();
 	while(itr.hasNext()){
 		System.out.println(itr.next());
 	}
