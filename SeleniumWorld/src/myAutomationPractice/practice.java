@@ -174,8 +174,8 @@ class practice extends SuperClass{
 	}
 	@Test
 	public void runtest4(){
-		driver.navigate().back();
-		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000450914897'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
+	driver.navigate().back();
+	driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000450914897'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000451959280'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
 		inputInTextBox(By.id("email"),"genius1@gmail.com");
 	    inputInTextBox(By.id("name"),"Rudra");
