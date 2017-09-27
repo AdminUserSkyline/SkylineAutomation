@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 
-public class SuperClass {
+import pageobjectmodel.loginpom;
+
+public class SuperClass extends loginpom {
 	WebDriver driver = null;
 	
 	int longWait = 50;
@@ -17,35 +19,52 @@ public class SuperClass {
 	System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
      driver=new ChromeDriver();
 	}
-	
-/**
- * Function to select value from drop down using select by value
- * @param locator
- * @param selectValue
- */
-	public void selectFromDropdownByValue(By locator,String selectValue){
-		Select sel=new Select(driver.findElement(locator));
-		sel.selectByValue(selectValue);
-	}
-	
 	/**
-	 *  Function to select value from drop down using select by index
+	 * Function to select value from drop down using select by value
 	 * @param locator
-	 * @param index
+	 * @param selectValue
 	 */
-	public void selectFromDropdownByIndex(By locator,int index){
-		Select sel=new Select(driver.findElement(locator));
-		sel.selectByIndex(index);
-	}
-	/**
-	 *  Function to select value from drop down using select by visibleText
-	 * @param locator
-	 * @param visibleText
-	 */
-	public void selectFromDropdownByVisibleText(By locator,String visibleText){
+public void selectFromDropdownByValue(By locator,String selectValue){
 	Select sel=new Select(driver.findElement(locator));
-	sel.selectByVisibleText(visibleText);
-	}
+	sel.selectByValue(selectValue);
+}
+
+/**
+ *  Function to select value from drop down using select by index
+ * @param locator
+ * @param index
+ */
+public void selectFromDropdownByIndex(By locator,int index){
+	Select sel=new Select(driver.findElement(locator));
+	sel.selectByIndex(index);
+}
+/**
+ *  Function to select value from drop down using select by visibleText
+ * @param locator
+ * @param visibleText
+ */
+public void selectFromDropdownByVisibleText(By locator,String visibleText){
+Select sel=new Select(driver.findElement(locator));
+sel.selectByVisibleText(visibleText);
+}
+
+
+/**
+*Function for taking input 
+* @param locator
+* @param input
+*/
+public void inputInTextBox(By locator,String input){
+driver.findElement(locator).sendKeys(input);
+       		
+}
+/**
+ * Function for clickable elements
+ * @param locator
+ */
+public void elementToBeClicked(By locator){
+driver.findElement(locator).click();
+}
 	/**
 	 *Function to wait for an element
 	 * @param locator
@@ -54,25 +73,10 @@ public class SuperClass {
 	WebDriverWait wait=new WebDriverWait(driver,longWait);
 	wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 }
- /**
-  *Function for taking input 
-  * @param locator
-  * @param input
-  */
-	public void inputInTextBox(By locator,String input){
-	driver.findElement(locator).sendKeys(input);
-           		
-}
-	/**
-	 * Function for clickable elements
-	 * @param locator
-	 */
-	public void elementToBeClicked(By locator){
-	driver.findElement(locator).click();
-	}
 	public void shortWait(int a) throws InterruptedException{
-   Thread.sleep(a);
-	}
+		Thread.sleep(a);
+		}
+ 
 }		
 		
 			    
