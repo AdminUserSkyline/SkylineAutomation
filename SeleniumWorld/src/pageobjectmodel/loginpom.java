@@ -87,10 +87,8 @@ public class loginpom {
    Thread.sleep(a);
 	}
 }		
-		
 
-		
-		
-	}
+}
+
 
 

@@ -6,9 +6,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-class practice extends SuperClass{
+class practice extends SuperClass {
 	  
-	private By firstNameTxt           =               By.xpath(".//*[@id='basicBootstrapForm']/div[1]/div[1]/input");
+	private By firstNameTxt           		 =        By.xpath(".//*[@id='basicBootstrapForm']/div[1]/div[1]/input");
 	private By lastNameTxt                   =        By.xpath(".//*[@id='basicBootstrapForm']/div[1]/div[2]/input");
 	private By addressTxt                    =        By.xpath(".//*[@id='basicBootstrapForm']/div[2]/div/textarea");
 	private By emailTxt                      =        By.xpath("//*[@id='eid']/input");
@@ -41,10 +41,6 @@ class practice extends SuperClass{
 	
 	private WebDriver driver = null;
 	
-	
-	
-	
-	  
 	@BeforeTest            
 	public void setDriver(){
 		driver = super.driver;
@@ -64,7 +60,7 @@ class practice extends SuperClass{
 	
 	
 	
-	 elementToBeClicked(genderRadBtn);
+	  elementToBeClicked(genderRadBtn);
 	  shortWait(1000);
 	  elementToBeClicked(hobbies1chkbox);
 	  elementToBeClicked(hobbies2chkbox);
@@ -74,7 +70,7 @@ class practice extends SuperClass{
 	selectFromDropdownByValue(skillsDropdown,"C++");
      shortWait(1000);
 	
-	selectFromDropdownByValue(countryName,"Australia");
+    selectFromDropdownByValue(countryName,"Australia");
 	waitforElement(selectCountryNameLst);
 	shortWait(5000);
 	
@@ -171,21 +167,6 @@ class practice extends SuperClass{
 	   inputInTextBox(By.id("verification_code"),"mera naam joker");
 	   elementToBeClicked(By.cssSelector("[class='btn btn-primary']"));
 	   
-	}
-	@Test
-	public void runtest4(){
-	driver.navigate().back();
-	driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000450914897'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
-		driver.findElement(By.cssSelector("a[id='wsb-button-00000000-0000-0000-0000-000451959280'] span[class='button-content wsb-button-content'][style='white-space:nowrap']")).click();
-		inputInTextBox(By.id("email"),"genius1@gmail.com");
-	    inputInTextBox(By.id("name"),"Rudra");
-		inputInTextBox(By.id("address")," Australia");
-		selectFromDropdownByVisibleText(By.id("card_type"),"Mastercard");
-		inputInTextBox(By.id("card_number"),"1234967812345678");
-		inputInTextBox(By.id("cardholder_name"),"circuit Prasad");
-		inputInTextBox(By.id("verification_code"),"mera nahi joker");
-		elementToBeClicked(By.cssSelector("[class='btn btn-primary']"));
-		
 	}
 	
 	
